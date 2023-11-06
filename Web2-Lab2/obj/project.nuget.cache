@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fQaWzCJ+mXGmB0yLeoEn0yaHjp1CC20vtPyHwy8pyAhx5m2BSxef2EDp3/rf3qwOGGOaiK7mqc602VNgj+V/9g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\filip\\Desktop\\Faks\\4. godina\\Zimski\\Web2\\Web2-Lab2\\Web2-Lab2\\Web2-Lab2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\filip\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512"
+  ],
+  "logs": []
+}
