@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%= title %></title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+</head>
+
+<body class="content">
+
+<%- include(`partials/header`); %>
+
+<main class="main">
+    <h1>XSS</h1>
+
+    <form id="messageForm">
+        <div class="checkbox-container">
+            <label for="Checkbox">Zaštita</label>
+            <input type="checkbox" id="Checkbox">
+        </div>
+
+        <label for="message">Nova poruka:</label>
+        <input type="text" id="messageInput" required>
+
+        <button type="button" onclick="addMessage()">Dodaj poruku</button>
+    </form>
+
+    <button type="button" class="delete-button" onclick="clearMessages()">Obriši poruke</button>
+
+    <ul class="msg-box" id="messageList"></ul>
+</main>
+<script src="./scripts/xss.js"></script>
+
+</body>
+
+</html>
