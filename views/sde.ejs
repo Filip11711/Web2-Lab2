@@ -15,8 +15,41 @@
 <%- include(`partials/header`); %>
 
 <main class="main">
-    
+    <h1>Sensitive Data Exposure</h1>
+
+    <form id="messageForm">
+        <div class="checkbox-container">
+            <label for="Checkbox">Zaštita</label>
+            <input type="checkbox" id="Checkbox">
+        </div>
+
+        <div>
+            <label for="username">Korisničko ime:</label>
+            <input type="text" id="usernameInput" required>
+        </div>
+
+        <div class="dv">
+            <label for="password">Lozinka:</label>
+            <input type="password" id="passwordInput" required>
+        </div>
+
+        <button type="button" onclick="addUser()">Dodaj korisnika</button>
+    </form>
+
+    <button type="button" class="delete-button" onclick="clearUsers()">Obriši korisnike</button>
+
+    <table class="user-table">
+        <thead>
+            <tr>
+                <th>Korisničko ime</th>
+                <th>Lozinka</th>
+            </tr>
+        </thead>
+        <tbody id="usersTableBody"></tbody>
+    </table>
 </main>
+<script src="./scripts/sde.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bcryptjs/dist/bcrypt.min.js"></script>
 
 </body>
 
